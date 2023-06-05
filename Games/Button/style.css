@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#clickButton {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 200px;
+  height: 50px;
+}
+
+#clickButton:hover {
+  background-color: #a80000;
+}
+
+#clickButton:active {
+  background-color: #660000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#clickCount {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+}
+
+#Test {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+}
+
+.text-rainbow-animation {
+  font-family: arial black;
+  font-size: 70px;
+  background-image:
+    linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-animation 9999s linear infinite;
+}
+
+@keyframes rainbow-animation {
+  to {
+    background-position: 4500vh;
+  }
+}
